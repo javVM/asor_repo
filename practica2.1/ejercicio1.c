@@ -7,8 +7,8 @@
 int main() {
 
    if(setuid(0) != 0){
-     perror("Ha ocurrido un error");
+     perror("Ha ocurrido un error./n");
    }
-   else printf("Se ha cambiado el UID de forma satisfactoria.");
+   else printf("Se ha cambiado el UID de forma satisfactoria./n");
    return 1;
 }
