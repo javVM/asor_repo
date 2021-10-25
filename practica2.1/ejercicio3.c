@@ -7,8 +7,8 @@
 const int  MAX = 255;
 
 int main() {
-  //Se ignora el 0 porque significa que no se han producido errores
-  for(int i = 1; i < MAX; i++){
+  //El 0 no es realmente un error, implica que, de hecho no se ha producido ninguno.
+  for(int i = 0; i < MAX; i++){
    printf("Error %d: %s\n",i, strerror(i));  
 
   }
