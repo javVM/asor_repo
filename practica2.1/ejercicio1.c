@@ -7,7 +7,7 @@
 int main() {
 
    if(setuid(0) != 0){
-     perror("Ha ocurrido un error" + );
+     perror("Ha ocurrido un error");
    }
    else printf("Se ha cambiado el UID de forma satisfactoria.");
    return 1;
