@@ -1,3 +1,4 @@
+//Javier Verde Marin
 #include <sys/utsname.h>
 #include <stdio.h>
 #include <string.h>
