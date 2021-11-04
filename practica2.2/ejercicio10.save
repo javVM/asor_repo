@@ -1,0 +1,10 @@
+Primero se crean el fichero y los enlaces
+$ touch fichero 
+$ ln -s fichero ficheroSim (enlace simbolico)
+$ ln fichero ficheroRig (enlace rigido)
+
+El fichero y el enlace rígido tienen el mismo inodo pero el enlace simbolico
+tiene uno distinto.
+Aparece que el fichero tiene 2 enlaces mientras que el enlace simbolico 1
+
+* Al eliminar un enlace rigido:
