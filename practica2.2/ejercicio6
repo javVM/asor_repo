@@ -1,0 +1,14 @@
+Se ha utilizado la siguiente secuencia de comandos:
+
+$ umask 027
+$ touch fichero
+$ mkdir directorio
+$ ls -l
+
+Se puede observar que se ha aplicado la máscara y se han quitado los permisos
+especificados.
+
+total 4
+drwxr-x--- 2 javVM javVM 4096 nov  4 12:50 directorio
+-rw-r----- 1 javVM javVM    0 nov  4 12:50 fichero
+
