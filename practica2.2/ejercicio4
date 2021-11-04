@@ -1,0 +1,10 @@
+Se ejecutan las siguientes instrucciones para crear el directorio y eliminar los permisos de ejecución
+
+mkdir directorio
+chmod 666 directorio
+
+Se intenta acceder al directorio
+
+cd directorio
+
+No se permite acceder: "bash: cd: directorio: Permiso denegado"
