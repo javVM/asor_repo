@@ -7,4 +7,4 @@ Se intenta acceder al directorio
 
 cd directorio
 
-No se permite acceder: "bash: cd: directorio: Permiso denegado"
+Se puede observar que no se permite acceder: "bash: cd: directorio: Permiso denegado"
