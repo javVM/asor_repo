@@ -14,7 +14,7 @@ int main() {
   int fd = open("./fichero", O_RDWR | O_CREAT, 0645);
   
   if(fd == -1){
-    perror("No se ha ejecutado open() correctamente./n"); 
+    perror("No se ha ejecutado open() correctamente.\n"); 
   }
    
   return 0;
