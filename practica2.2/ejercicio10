@@ -1,0 +1,12 @@
+En primer lugar se crean los ficheros:
+
+$ touch fichero
+$ ln -s fichero ficheroSim (enlace simbolico)
+$ ln fichero ficheroRig (enlace rigido)
+
+El fichero tiene 2 enlaces, mientras que el enlace simbolico 1.
+Ademas, el inodo del fichero y en enlace rigido es el mismo mientras que el de el enlace simbolico es distinto.
+
+* Al eliminar el enlace rigido: Se elimina el archivo. Si se elimina con unlink se reduce el número de enlaces del fichero a 1.
+* Al eliminar el enlace simbolico: No ocurre nada, simplemente se elimina el archivo.
+* Al eliminar el archivo: El enlace rígido no se ve afectado, pero el enlace simbólico pierde el acceso a la información y ahora está vacío.
