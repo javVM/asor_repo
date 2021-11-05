@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
   }
   else{
     perror("Se necesita 1 argumento para poder ejecutar la funcion\n");
-  }
+    return -1; 
+ }
   return 0;
 }

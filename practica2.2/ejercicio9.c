@@ -38,6 +38,7 @@ int main(int argc, char *argv[]) {
    }
    else{
      perror("Solo se necesita 1 argumento.\n"); 
+     return -1;  
    }
  
  return 0;

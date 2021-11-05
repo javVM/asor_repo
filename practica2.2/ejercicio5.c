@@ -12,6 +12,7 @@ int main() {
   
   if(fd == -1){
     perror("No se ha ejecutado open() correctamente.\n"); 
+    return -1;
   }
  
   return 0;
