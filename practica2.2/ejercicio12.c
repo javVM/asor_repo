@@ -18,7 +18,7 @@ int main(int argc,  char * argv[]){
     printf("Esto es una prueba.");
     printf("Adios.");
    
-    dup2(fd,1);
+    dup(fd,1);
   }   
 
   return 0;
