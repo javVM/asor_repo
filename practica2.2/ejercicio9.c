@@ -20,9 +20,9 @@ const char * getType(mode_t mode) {
 int main(int argc, char *argv[]) {
    if(argc == 2) {
       struct stat buff;
-      stat(argv[1], &buff);
+      lstat(argv[1], &buff);
      
-     //Para formatear la fecha
+     //Para dar formato a la fecha
       const struct  tm *dt = localtime(&buff.st_atime);
       char * s = malloc(50);
       const char * format = "%Y-%m-%d %H:%M";
