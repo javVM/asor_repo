@@ -1,3 +1,2 @@
 Nice:  sudo renice -n -10 2548
-Priority: 
- sudo chrt -f -p 12 2548
+Priority: sudo chrt -f -p 12 2548
