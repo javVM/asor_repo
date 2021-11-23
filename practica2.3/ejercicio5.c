@@ -11,5 +11,5 @@ int main() {
   printf("El PGID es: %i\n", getpgid(pid));
   printf("El SID es: %i\n", getsid(pid));
 
-
+  return 0;
 }
