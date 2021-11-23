@@ -1,0 +1,16 @@
+SALIDA SIN MODIFICAR LA POLÍTICA DE PLANIFICACIÓN DE LA SHELL:
+/*************************************************************/
+Politica de planificacion del proceso actual: SCHED_OTHER
+Prioridad del proceso actual: 0
+Prioridad maxima: 0
+Prioridad minima: 0
+
+SALIDA TRAS MODIFICAR LA POLÍTICA DE PLANIFICACIÓN DE LA SHELL:
+/*************************************************************/
+Politica de planificacion del proceso actual: SCHED_FIFO
+Prioridad del proceso actual: 12
+Prioridad maxima: 99
+Prioridad minima: 1
+
+Como se puede observar por el resultado de la ejecución del programa, ahora la prioridad es 12. Además también cambian
+la prioridad máxima y mínima por lo que se puede deducir que efectivamente se heredan atributos de planificación.
