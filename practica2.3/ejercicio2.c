@@ -18,5 +18,6 @@ int main() {
   printf("Prioridad del proceso actual: %i\n", p.sched_priority);
   printf("Prioridad maxima: %i\n", sched_get_priority_max(scheduler));
   printf("Prioridad minima: %i\n", sched_get_priority_min(scheduler));
-
+ 
+  return 0;
 }
