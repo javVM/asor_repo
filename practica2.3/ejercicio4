@@ -1,0 +1,8 @@
+Observación realizada sobre la siguiente salida:
+ps -o pid,ppid,pgid,sid,comm -s 2473
+  PID  PPID  PGID   SID COMMAND
+ 2473  2434  2473  2473 bash
+ 2641  2473  2641  2473 ejercicio2
+
+El PPID del proceso creado en la shell es el mismo que el PID de la shell y ambos comparten el SID.
+Cuando se crea un nuevo proceso, su identificador de grupo de procesos (PGID) es su propio PID.
