@@ -25,8 +25,8 @@
 //VERSION UTILIZANDO EXEC:
 
 int main(int argc, char * argv[]) {
-  if(argc !=  2){
-    perror("Por favor, introduce un solo argumento (comando)\n");
+  if(argc <  2){
+    perror("Por favor, introduce un comando\n");
     return -1;
   }
   else{

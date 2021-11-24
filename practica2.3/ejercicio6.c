@@ -17,12 +17,12 @@
  Se puede observar que el proceso hijo esta en estado zombie ya que el padre no ha hecho wait()
 */
 
-void processAtributes(pid_t pid){
-
+void processAtributes(){
+ pid_t pid = getpid();
  char * buffer = malloc(PATH_MAX);
  struct rlimit rlim;
 
- printf("El el PID es: %i\n", getpid());
+ printf("El el PID es: %i\n", pid);
  printf("El PPID es: %i\n",getppid());
  printf("El PGID es: %i\n", getpgid(pid));
  printf("El SID es: %i\n", getsid(pid));
@@ -42,19 +42,19 @@ int main() {
  switch(pid) {
   case -1:; //Error
        perror("Error al usar fork()\n");
-       break;
+       exit(1);
 
   case 0:; //Hijo
       if(setsid() == -1) perror("Error al crear una nueva sesion\n");
       if(chdir("/tmp") == -1) perror("Error al cambiar el directorio de trabajo\n");
     
-      processAtributes(pid);
+      processAtributes();
 
       break; 
 
  default:; //Padre
       //Se introduce una pausa para poder comprobar una de las preguntas:  sleep(3);
-      processAtributes(pid);
+      processAtributes();
       break;
  }
  
