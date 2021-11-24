@@ -4,7 +4,7 @@
 #include <sys/time.h>
 #include <sys/resource.h>
 
-#define PATH_MAX 4096
+#define PATH_MAX 4097
 
 int main() {
   
