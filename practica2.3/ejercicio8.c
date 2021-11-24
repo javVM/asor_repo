@@ -7,6 +7,8 @@
 
 #define PATH_MAX 4097
 
+//No se utiliza wait porque se parte de la plantilla del ejercicio 6
+
 void processAtributes(){
 
  pid_t pid = getpid();
