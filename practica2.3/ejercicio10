@@ -13,4 +13,4 @@ CPU time limit exceeded
 $ sleep 600
 Hangup
 
-Se puede observar que explica el motivo por el que se ha acabado o detenido el proceso y que a su vez está relacionado con el tipo de señal enviado.
+Se puede observar que la salida explica el motivo por el que se ha acabado o detenido el proceso y que a su vez está relacionado con el tipo de señal enviado.
