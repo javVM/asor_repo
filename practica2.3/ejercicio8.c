@@ -57,9 +57,9 @@ int main(int argc, char * argv[]) {
          dup2(fd,1);     
          dup2(fd2,2);
          dup2(fd3,0);
-      
+         execvp(argv[1], argv+1);
        }
-       execvp(argv[1], argv+1);
+
       break; 
 
   default:; //Padre
