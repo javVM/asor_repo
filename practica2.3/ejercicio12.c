@@ -24,7 +24,9 @@ int main() {
  sigaction(SIGTSTP, &act, NULL);
 
  sigset_t set;
- sigemptyset(&set);
+ sigfillset(&set);
+ sigdelset(&set, SIGINT);
+ sigdelset(&set, SIGTSTP);
 
  while(numInt + numStp < 10) {
    sigsuspend(&set);
