@@ -21,6 +21,7 @@ int main(int argc, char * argv[]) {
  }
  
  write(fd, argv[1], strlen(argv[1])+1);
+ close(fd);
 
  return 0;
 }
