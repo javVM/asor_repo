@@ -31,5 +31,6 @@ int main(int argc, char * argv[]) {
   return -1;
  }
 
+ freeaddrinfo(res);
  return 0;
 }
