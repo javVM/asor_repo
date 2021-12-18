@@ -57,22 +57,22 @@ int main(int argc, char * argv[]) {
     exit(1);
   }
   else if(buf[0] == 'd') {
-       currTime = time(NULL);
-       currDate = localtime(&currTime);
-       s = malloc(11);
-       strftime(s, 11, dateFormat, currDate);
-       sendto(sd, s, 11, 0, (struct sockaddr *) &addr, addrlen);
-       memset(s,0,strlen(s));
-       free(s);
+    currTime = time(NULL);
+    currDate = localtime(&currTime);
+    s = malloc(11);
+    strftime(s, 11, dateFormat, currDate);
+    sendto(sd, s, 11, 0, (struct sockaddr *) &addr, addrlen);
+    memset(s,0,strlen(s));
+    free(s);
   }
   else if(buf[0] == 't') {
-     currTime = time(NULL);
-     currDate = localtime(&currTime);
-     s = malloc(12);
-     strftime(s, 12, hourFormat, currDate);
-     sendto(sd, s, 12, 0, (struct sockaddr *) &addr, addrlen);
-     memset(s,0,strlen(s));
-     free(s);
+    currTime = time(NULL);
+    currDate = localtime(&currTime);
+    s = malloc(12);
+    strftime(s, 12, hourFormat, currDate);
+    sendto(sd, s, 12, 0, (struct sockaddr *) &addr, addrlen);
+    memset(s,0,strlen(s));
+    free(s);
   }
   else{
     printf("Comando %c no soportado\n", buf[0]);
