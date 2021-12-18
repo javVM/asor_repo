@@ -77,7 +77,6 @@ int main(int argc, char * argv[]) {
   else{
     printf("Comando %c no soportado\n", buf[0]);
   }
-
  }
 
  return 0;
