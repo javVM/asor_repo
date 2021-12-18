@@ -53,6 +53,7 @@ int main(int argc, char * argv[]) {
 
   if(buf[0] == 'q'){
     printf("Saliendo...\n");
+    close(sd);
     exit(1);
   }
   else if(buf[0] == 'd') {
