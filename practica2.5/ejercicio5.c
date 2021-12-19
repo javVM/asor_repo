@@ -111,6 +111,8 @@ int main(int argc, char * argv[]) {
    int hijo = wait(NULL);
    printf("Hijo %i ha terminado\n", hijo);
  }
-
+ freeaddrinfo(res);
+ close(sd);
+ 
  return 0;
 }
