@@ -51,6 +51,8 @@ int main(int argc, char * argv[]) {
  sd = socket(res->ai_family, res->ai_socktype, 0);
 
  bind(sd, res->ai_addr, res->ai_addrlen);
+  
+ freeaddrinfo(res);
 
  listen(sd, 5);
 
@@ -79,8 +81,6 @@ int main(int argc, char * argv[]) {
       break;
   }
  }
- 
- freeaddrinfo(res);
  close(sd);
 
  return 0;
