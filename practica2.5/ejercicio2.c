@@ -53,6 +53,7 @@ int main(int argc, char * argv[]) {
 
   if(buf[0] == 'q'){
     printf("Saliendo...\n");
+    freeaddrinfo(res);
     close(sd);
     exit(1);
   }
@@ -78,6 +79,6 @@ int main(int argc, char * argv[]) {
     printf("Comando %c no soportado\n", buf[0]);
   }
  }
-
+ 
  return 0;
 }
