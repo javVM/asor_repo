@@ -56,7 +56,10 @@ int main(int argc, char * argv[]) {
   printf("Conexión terminada\n");
   close(clisd);
   }
-  else return -1;
+  else {
+    perror("Se ha producido un error al recibir datos\n");
+    return -1;
+  }
  }
 
  freeaddrinfo(res);
