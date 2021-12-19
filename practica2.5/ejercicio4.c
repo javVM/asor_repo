@@ -72,6 +72,7 @@ int main(int argc, char * argv[]) {
 
   if(buf[0] == 'q'){
     printf("Saliendo...\n");
+    freeaddrinfo(res);
     close(sd);
     exit(1);
   }
